@@ -1,2 +1,5 @@
 # Ignore this directory and all of its contents
 ignore/
+
+# Ignore __pycache__
+__pycache__
