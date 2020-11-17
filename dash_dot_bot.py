@@ -9,7 +9,6 @@ import time
 
 
 # TODO: write master loop for the interface
-# TODO: add dictionary w/ English - Morse translations
 # TODO: log transcript of the translation session to a .txt file
 # TODO: use the 'time' module and an equation to print the answers in the correct tempo & rhythm
 
