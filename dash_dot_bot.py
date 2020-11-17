@@ -52,7 +52,7 @@ key = {
     '0': '- - - - -'
 }
 
-# for x in key:
-#     print(key[x])
-#     time.sleep(1)
+for x in key:
+    print(key[x])
+    time.sleep(1)
 
