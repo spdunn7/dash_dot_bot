@@ -13,16 +13,46 @@ import time
 # TODO: log transcript of the translation session to a .txt file
 # TODO: use the 'time' module and an equation to print the answers in the correct tempo & rhythm
 
-# I've added a space after each letter to add the space between letters when spelling a word
 key = {
-    'A': '. - ',
-    'B': '- . . . ',
-    'C': '- . - . ',
-    'D': '- . . '
+    'A': '. -',
+    'B': '- . . .',
+    'C': '- . - .',
+    'D': '- . .',
+    'E': '.',
+    'F': '. . - .',
+    'G': '- - .',
+    'H': '. . . .',
+    'I': '. .',
+    'J': '. - - -',
+    'K': '- . -',
+    'L': '. - . .',
+    'M': '- -',
+    'N': '- .',
+    'O': '- - -',
+    'P': '. - - .',
+    'Q': '- - . -',
+    'R': '. - .',
+    'S': '. . .',
+    'T': '-',
+    'U': '. . -',
+    'V': '. . . -',
+    'W': '. - -',
+    'X': '- . . -',
+    'Y': '- . - -',
+    'Z': '- - . .',
+    '1': '. - - - -',
+    '2': '. . - - -',
+    '3': '. . . - -',
+    '4': '. . . . -',
+    '5': '. . . . .',
+    '6': '- . . . .',
+    '7': '- - . . .',
+    '8': '- - - . .',
+    '9': '- - - - .',
+    '0': '- - - - -'
 }
 
 # for x in key:
-#     print(key[x[0]])
+#     print(key[x])
 #     time.sleep(1)
 
-print(key['a'])
