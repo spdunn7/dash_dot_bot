@@ -5,6 +5,8 @@ This program coverts a text string to Morse code.
 Created: 2020-10-10
 Author: Sean P. Dunn
 """
+import time
+
 
 # TODO: write master loop for the interface
 # TODO: add dictionary w/ English - Morse translations
@@ -13,10 +15,14 @@ Author: Sean P. Dunn
 
 # I've added a space after each letter to add the space between letters when spelling a word
 key = {
-    'a': '. - ',
-    'b': '- . . . ',
-    'c': '- . - . ',
-    'd': '- . . '
+    'A': '. - ',
+    'B': '- . . . ',
+    'C': '- . - . ',
+    'D': '- . . '
 }
-print(key)
-print(key[1])
+
+# for x in key:
+#     print(key[x[0]])
+#     time.sleep(1)
+
+print(key['a'])
