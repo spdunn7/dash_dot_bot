@@ -53,6 +53,14 @@ key = {
 }
 
 
+def translate(user_input):
+    # TODO: take user_input
+    user_input = user_input.upper()
+    # TODO: compare user_input to key using indices
+    # TODO: print translation
+    # TODO: use time module to print each symbol one by one
+
+
 # TODO: add a count to make intro statement only appear upon first opening app
 while True:
     print("""Hi, I'm Dash Dot Bot.
@@ -63,5 +71,7 @@ while True:
     if user_input.upper() == "VIEW CHART":
         print(key)
         # Do i need a 'continue' statement here?
-    if user_input.upper() == "Q":
+    elif user_input.upper() == "Q":
         break
+    else:
+        translate()
