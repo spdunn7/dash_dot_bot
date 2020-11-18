@@ -52,11 +52,6 @@ key = {
     '0': '- - - - -'
 }
 
-# This loop is for testing
-# Delete soon
-# for x in key:
-#     print(key[x])
-#     time.sleep(1)
 
 # TODO: add a count to make intro statement only appear upon first opening app
 while True:
