@@ -5,8 +5,6 @@ This program coverts a text string to Morse code.
 Created: 2020-10-10
 Author: Sean P. Dunn
 """
-import time
-
 
 # TODO: write master loop for the interface
 # TODO: write function to perform the translation
@@ -54,24 +52,36 @@ key = {
 
 
 def translate(user_input):
-    # TODO: take user_input
-    user_input = user_input.upper()
-    # TODO: compare user_input to key using indices
-    # TODO: print translation
-    # TODO: use time module to print each symbol one by one
+    temp_list = ""
+
+    for x in user_input:
+        temp_list += key[x.upper()]
+
+    print(temp_list)
 
 
-# TODO: add a count to make intro statement only appear upon first opening app
+intro = """
+Hi, I'm Dash Dot Bot.
+I translate what you say into Morse code!
+Type something in and I'll say it back to you in Morse code!
+"""
+
+print(intro)
+
 while True:
-    print("""Hi, I'm Dash Dot Bot.
-    I translate what you say into Morse code!
-    Type something in and I'll say it back to you in Morse code!""")
-    user_input = input("""To view the conversion chart, type 'view chart'.
-    Or, type 'Q' to Quit """)
-    if user_input.upper() == "VIEW CHART":
+    user_input = input("""
+Type 'H' for HELP & more info.
+Type 'Q' to Quit.
+Otherwise, type anything else, and I'll repeat it back in Morse code!
+""")
+    if user_input.upper() == "H":
+        print()
+        print("CONVERSION CHART:")
         print(key)
+        print(intro)
         # Do i need a 'continue' statement here?
     elif user_input.upper() == "Q":
         break
     else:
-        translate()
+        translate(user_input)
+
