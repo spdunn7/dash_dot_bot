@@ -6,6 +6,7 @@ Created: 2020-10-10
 Author: Sean P. Dunn
 """
 
+# Store English to Morse code conversion key
 key = {
     'A': '. -',
     'B': '- . . .',
@@ -49,6 +50,7 @@ key = {
 }
 
 
+# Function to convert user input to Morse code
 def translate(user_input):
     temp_list = ""
 
@@ -66,6 +68,7 @@ Type something in and I'll say it back to you in Morse code!
 
 print(intro)
 
+# Master loop that serves as the console app
 while True:
     user_input = input("""
 Type 'H' for HELP & more info.
@@ -77,7 +80,6 @@ Otherwise, type anything else, and I'll repeat it back in Morse code!
         print("CONVERSION CHART:")
         print(key)
         print(intro)
-        # Do i need a 'continue' statement here?
     elif user_input.upper() == "Q":
         break
     else:
