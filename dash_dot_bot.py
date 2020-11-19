@@ -6,11 +6,6 @@ Created: 2020-10-10
 Author: Sean P. Dunn
 """
 
-# TODO: write master loop for the interface
-# TODO: write function to perform the translation
-# TODO: log transcript of the translation session to a .txt file
-# TODO: use the 'time' module and an equation to print the answers in the correct tempo & rhythm
-
 key = {
     'A': '. -',
     'B': '- . . .',
@@ -87,4 +82,3 @@ Otherwise, type anything else, and I'll repeat it back in Morse code!
         break
     else:
         translate(user_input)
-
