@@ -32,8 +32,8 @@
 
 ## Special Instructions
 
-- preferably, use 'python3' to run the program
-- run program with 'python3 dash_dot_bot.py' command
+- use 'python3' to run the program
+  - run program with 'python3 dash_dot_bot.py' command
 - follow the on-screen prompts
   - 'H' for HELP
     - displays the conversion chart
