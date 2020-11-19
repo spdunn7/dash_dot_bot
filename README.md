@@ -2,7 +2,7 @@
 
 > Morse code translator bot
 >
-> Created: 2020-10-10
+> Created: 2020-10-10  
 > Author: Sean P. Dunn
 
 ***
