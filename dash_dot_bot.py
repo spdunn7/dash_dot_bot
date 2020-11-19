@@ -52,12 +52,12 @@ key = {
 
 # Function to convert user input to Morse code
 def translate(user_input):
-    temp_list = ""
+    temp_str = ""
 
     for x in user_input:
-        temp_list += key[x.upper()]
+        temp_str += key[x.upper()]
 
-    print(temp_list)
+    print(temp_str)
 
 
 intro = """
