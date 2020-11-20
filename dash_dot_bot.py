@@ -49,6 +49,19 @@ key = {
     '.': '.'
 }
 
+intro = """
+Hi, I'm Dash Dot Bot.
+I translate what you say into Morse code!
+Type something in and I'll say it back to you in Morse code!
+"""
+
+instructions = """
+Type 'H' for HELP & more info.
+Type 'Q' to Quit.
+Otherwise, type anything else, and I'll repeat it back in Morse code!
+
+"""
+
 
 # Function to convert user input to Morse code
 def translate(user_input):
@@ -57,30 +70,36 @@ def translate(user_input):
     for x in user_input:
         temp_str += key[x.upper()]
 
-    print(temp_str)
+    return temp_str
 
 
-intro = """
-Hi, I'm Dash Dot Bot.
-I translate what you say into Morse code!
-Type something in and I'll say it back to you in Morse code!
-"""
+# Print intro function
+def print_intro():
+    print(intro)
 
-print(intro)
+
+# Display Key Function
+def display_key():
+    for x, y in key.items():
+        print(x, " ", y)
+
+
+print_intro()
+
 
 # Master loop that serves as the console app
-while True:
-    user_input = input("""
-Type 'H' for HELP & more info.
-Type 'Q' to Quit.
-Otherwise, type anything else, and I'll repeat it back in Morse code!
-""")
-    if user_input.upper() == "H":
-        print()
-        print("CONVERSION CHART:")
-        print(key)
-        print(intro)
-    elif user_input.upper() == "Q":
-        break
-    else:
-        translate(user_input)
+def play():
+    while True:
+        user_input = input(instructions)
+        if user_input.upper() == "H":
+            print()
+            print("CONVERSION CHART:")
+            display_key()
+            print_intro()
+        elif user_input.upper() == "Q":
+            break
+        else:
+            print(translate(user_input))
+
+
+play()
