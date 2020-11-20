@@ -25,6 +25,23 @@
 
 - 'key' dictionary holds the conversion key/values for translating from English to Morse code
 
+### Create & Call At Least 3 Functions
+
+- 4 total functions:
+
+  - translate()
+    - line 67
+    - converts user input to Morse code
+  - print_intro()
+    - line 77
+    - prints intro text
+  - display_key()
+    - line 82
+    - prints conversion key dictionary
+  - play()
+    - line 91
+    - enters the master loop that acts as application interface
+
 ### Build Conversion Tool
 
 - 'translate()' function receives user input in the form of a text string, iterates through that input, and, using the 'key' conversion dictionary, prints the associated Morse code stored in the dict
